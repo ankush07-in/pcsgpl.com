@@ -3,9 +3,10 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-import Company from "./components/Company/Company"
+import Company from "./components/Company/Company";
 import Services from "./components/Services/Services";
-import Careers from "./components/Careers/Careers"
+import Partners from "./components/Partners/Partners";
+import Careers from "./components/Careers/Careers";
 
 // Main App Component
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/company" element={<Company />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/partners" element={<Partners />} />
         <Route path="/careers" element={<Careers />} />
       </Routes>
     </Router>
