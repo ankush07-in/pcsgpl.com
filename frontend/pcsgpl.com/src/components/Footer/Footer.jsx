@@ -1,3 +1,5 @@
+import logo from "../../assets/images/logo-pcs-global.jpg";
+
 function Footer() {
     return (
       <footer className="bg-blue-900 text-white mt-20">
@@ -5,12 +7,12 @@ function Footer() {
           {/* Logo & About */}
           <div>
             <img
-              src="assets/images/logo-pcs-global.jpg"
+              src={logo}
               alt="PCS Global Logo"
               className="h-12 w-auto mb-4 rounded shadow-sm"
             />
             <p className="text-sm text-gray-300">
-              Perennation Computer Solutions Global Pvt. Ltd.<br />
+              PCS Global Pvt. Ltd.<br />
               Empowering individuals. Transforming businesses.
             </p>
           </div>
