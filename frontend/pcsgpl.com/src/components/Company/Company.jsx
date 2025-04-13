@@ -35,12 +35,12 @@ function Company() {
             <div className="grid gap-8 md:grid-cols-2">
               <div>
                 <img src="assets/images/team/founder.jpg" alt="Founder" className="w-32 h-32 rounded-full mx-auto mb-4" />
-                <h3 className="text-xl font-semibold">[Founder Name]</h3>
+                <h3 className="text-xl font-semibold">Mr. Alok Halder</h3>
                 <p className="text-gray-600 text-sm">Founder & Visionary Leader</p>
               </div>
               <div>
                 <img src="assets/images/team/ceo.jpg" alt="CEO" className="w-32 h-32 rounded-full mx-auto mb-4" />
-                <h3 className="text-xl font-semibold">[CEO Name]</h3>
+                <h3 className="text-xl font-semibold">Mr. Sunit Chaudhuri</h3>
                 <p className="text-gray-600 text-sm">Chief Executive Officer</p>
               </div>
             </div>
