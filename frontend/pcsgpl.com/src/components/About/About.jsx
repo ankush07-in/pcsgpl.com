@@ -18,87 +18,100 @@ function About() {
         </div>
       </section>
 
-      {/* About Layout with Shadow Boxes */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4 flex flex-wrap gap-10">
+      {/* About Layout */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 flex flex-col xl:flex-row gap-12">
           {/* Left Column */}
-          <div className="w-full xl:w-5/12">
-            <div className="bg-white shadow-lg rounded-lg p-6 space-y-6">
-              <img src="assets/images/about/guru-blessings.jpg" alt="Guru Blessings" className="w-full rounded shadow-sm" />
-              <h2 className="text-lg font-semibold">
-                An organization inspired by our master of love & smile to impact millions of lives in our society
+          <div className="w-full xl:w-5/12 space-y-10">
+            {/* Section: Inspiration */}
+            <div className="space-y-4">
+              <img
+                src="assets/images/about/guru-blessings.jpg"
+                alt="Guru Blessings"
+                className="w-full rounded-md object-cover"
+              />
+              <h2 className="text-xl font-semibold text-blue-800">
+                A Vision Inspired by Compassion & Service
               </h2>
+              <p className="text-gray-700 leading-relaxed">
+                PCS Global is inspired by Sri Sri Ravi Shankar’s teachings — we’re not just building careers, we're nurturing confidence, purpose, and impact in young professionals across India.
+              </p>
+            </div>
 
-              <img src="assets/images/about/1.jpg" alt="Drop Worries" className="w-full rounded shadow-sm" />
-              <h2 className="text-lg font-semibold">
-                You can come here with worries about your career path or business but you will not return with them.
-                Drop all worries here & start a new life, new career, or business.
-              </h2>
+            {/* Section: Social Impact */}
+            <div className="space-y-4">
+              <img
+                src="assets/images/about/our-mission.jpg"
+                alt="Mission"
+                className="w-full rounded-md object-cover"
+              />
+              <h2 className="text-xl font-semibold text-blue-800">Building Careers That Matter</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Over the years, we've helped thousands of students, graduates, and professionals find direction in their careers. Our mission is to uplift unplaced engineers and give them a reason to smile again.
+              </p>
+            </div>
 
-              <img src="assets/images/about/our-mission.jpg" alt="Mission" className="w-full rounded shadow-sm" />
-              <h2 className="text-lg font-semibold">
-                Our mission is to bring back smiles to every unplaced engineer in India by upskilling and establishing their professional career paths.
-              </h2>
-
-              <img src="assets/images/about/buildyourcareer.jpg" alt="Build Career" className="w-full rounded shadow-sm" />
-              <h2 className="text-lg font-semibold">
-                Come and build your career here. Join hands with us to uplift yourself. Fly high again.
-                Let your smile change the world!
-              </h2>
+            {/* Section: Culture */}
+            <div className="space-y-4">
+              <img
+                src="assets/images/about/buildyourcareer.jpg"
+                alt="Build Career"
+                className="w-full rounded-md object-cover"
+              />
+              <h2 className="text-xl font-semibold text-blue-800">Culture of Growth and Gratitude</h2>
+              <p className="text-gray-700 leading-relaxed">
+                At PCS Global, we embrace an open, empowering, and mentorship-driven work culture. Our team is our family — and every smile counts.
+              </p>
             </div>
           </div>
 
           {/* Right Column */}
-          <div className="w-full xl:w-6/12 xl:ml-auto">
-            <div className="bg-white shadow-lg rounded-lg p-6 space-y-6">
-              <h2 className="text-xl font-semibold text-blue-800">PCS Global: P stands for Perennation (Which never perish)</h2>
-              <h2 className="text-xl font-semibold text-blue-800">PCS Global: An Ethical Organization</h2>
-              <h2 className="text-xl font-semibold text-blue-800">PERENNATION COMPUTER SOLUTIONS GLOBAL PRIVATE LIMITED</h2>
-              <h2 className="text-xl font-semibold text-blue-800">Blessed & Inspired by Sri Sri Ravi Shankar</h2>
-              <h2 className="italic text-xl font-semibold text-yellow-700">
-                "Let your smile change the world! Never let the world change your smile!" - Sri Sri Ravi Shankar
-              </h2>
+          <div className="w-full xl:w-6/12 xl:ml-auto space-y-8">
+            <div className="space-y-4">
+              <h2 className="text-2xl font-bold text-blue-900">PCS Global: Perennation Computer Solutions</h2>
+              <p className="text-gray-700">
+                "Perennation" means never perishing. That’s the heart of our name — we exist to create value that lasts.
+              </p>
+              <p className="italic text-yellow-800 font-medium">
+                “Let your smile change the world! Never let the world change your smile.” – Sri Sri Ravi Shankar
+              </p>
+            </div>
 
-              <h2 className="text-xl font-semibold text-green-800">Improve Efficiency and Provide Better Experiences!</h2>
-              <h3 className="text-2xl font-bold text-blue-600">Keep Your Business Safe & Ensure High Availability.</h3>
+            <div className="space-y-2">
+              <h3 className="text-lg font-semibold text-blue-800">What We Stand For:</h3>
+              <ul className="list-disc list-inside text-gray-800">
+                <li>Ethical, purpose-driven work</li>
+                <li>Upskilling the youth of India</li>
+                <li>Delivering market-ready tech solutions</li>
+              </ul>
+            </div>
 
-              <div className="text-gray-700 space-y-4">
-                <p className="font-medium">
-                  PCS Global Pvt. Ltd. partners efficiently with our clients to deliver the best customized solutions that help them sustain market competition.
-                </p>
-                <p className="font-medium">
-                  We provide a portfolio of IT Services, Software, and Networking solutions to solve critical problems for clients.
-                </p>
-                <p className="font-medium">
-                  We offer Web Development, Systems Integration, Consulting, Infrastructure, Maintenance,
-                  and High-End Server Solutions across sectors like Corporate Institutes, Tourism, Banking, Telecom, Media, and more.
-                </p>
-              </div>
+            <div className="space-y-4 pt-4 border-t border-gray-200">
+              <h3 className="text-xl font-semibold text-blue-800">What We Do</h3>
+              <p className="text-gray-700">
+                PCS Global provides a portfolio of IT services that power digital transformation. From app development to data center management, we deliver secure, scalable, and future-ready solutions.
+              </p>
+              <ul className="list-disc list-inside text-gray-800 mt-2">
+                <li>Web Development & System Integration</li>
+                <li>Training & Placement Programs</li>
+                <li>Enterprise Infrastructure & Consulting</li>
+                <li>Technical Support Services</li>
+              </ul>
+            </div>
 
-              <a href="#" className="inline-block mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition">
+            <div className="pt-4 border-t border-gray-200">
+              <h3 className="text-xl font-semibold text-blue-800 mb-2">Why PCS Global?</h3>
+              <ul className="list-disc list-inside text-gray-800 space-y-1">
+                <li>1330+ IT professionals placed in top companies</li>
+                <li>5000+ client interactions delivered with care</li>
+                <li>Solutions crafted by industry experts</li>
+              </ul>
+              <a
+                href="#"
+                className="inline-block mt-6 px-6 py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition"
+              >
                 Schedule An Appointment
               </a>
-
-              <div className="bg-gray-100 p-4 rounded shadow-inner">
-                <ul className="mt-6 space-y-2 list-disc list-inside text-gray-800">
-                  <li>PCS Global contributed 1330+ IT Professionals to the industry</li>
-                  <li>Engaged in more than 5,000 client interactions</li>
-                  <li>Experts provided critical solutions for major challenges</li>
-                </ul>
-              </div>
-
-              <a href="#" className="inline-block mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition">
-                PCS Global Primary Services
-              </a>
-
-              <div className="bg-gray-100 p-4 rounded shadow-inner">
-                <ul className="mt-6 space-y-2 list-disc list-inside text-gray-800">
-                  <li>Software Development</li>
-                  <li>Training and Placement</li>
-                  <li>Talent Outsourcing</li>
-                  <li>Technical Support (Individuals & Companies)</li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
