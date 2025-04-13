@@ -2,6 +2,7 @@ import Footer from "../../components/Footer/Footer";
 
 function Contact() {
   return (
+    <>
     <div className="px-4 md:px-20 py-12 bg-white">
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-3xl font-bold text-blue-600 mb-6">Contact Us</h1>
@@ -44,6 +45,8 @@ function Contact() {
         </form>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 
