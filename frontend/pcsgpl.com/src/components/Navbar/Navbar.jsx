@@ -1,39 +1,29 @@
 import { Link } from "react-router-dom";
+import logo from "../../assets/images/logo-pcs-global.jpg";
+
+const navItems = [
+  { path: "/", label: "Home" },
+  { path: "/about", label: "About" },
+  { path: "/contact", label: "Contact" },
+  { path: "/company", label: "Company" },
+  { path: "/services", label: "Services" },
+  { path: "/partners", label: "Partners" },
+  { path: "/careers", label: "Careers" },
+];
 
 function Navbar() {
   return (
-    <nav className="bg-blue-500 text-white  px-20 shadow-md h-16">
-      <div className="container mx-auto flex justify-between">
-        <div className="flex items-center p-3 mt-0">
-          <img
-            src="src\assets\images\logo-pcs-global.jpg"
-            alt="Logo"
-            className="w-auto h-10 rounded-md"
-          />
+    <nav className="bg-blue-500 text-white px-6 sm:px-20 shadow-md h-16">
+      <div className="container mx-auto flex justify-between items-center h-full">
+        <div className="p-2">
+          <img src={logo} alt="Logo" className="h-10 w-auto rounded-md" />
         </div>
-        <div className="flex gap-8 p-4">
-          <Link to="/" className="hover:underline">
-            Home
-          </Link>
-          <Link to="/about" className="hover:underline">
-            About
-          </Link>
-          <Link to="/contact" className="hover:underline">
-            Contact
-          </Link>
-          <Link to="/contact" className="hover:underline">
-            Comapany
-          </Link>
-          <Link to="/contact" className="hover:underline">
-            Services
-          </Link>
-          <Link to="/contact" className="hover:underline">
-            Partners
-          </Link>
-          <Link to="/contact" className="hover:underline">
-            Careers
-          </Link>
-          <Link to="/contact" className="hover:underline"></Link>
+        <div className="hidden md:flex gap-6 p-4">
+          {navItems.map(({ path, label }) => (
+            <Link key={label} to={path} className="hover:underline">
+              {label}
+            </Link>
+          ))}
         </div>
       </div>
     </nav>
