@@ -2,7 +2,7 @@ import logo from "../../assets/images/logo-pcs-global.jpg";
 
 function Footer() {
     return (
-      <footer className="bg-blue-900 text-white mt-20">
+      <footer className="bg-blue-900 text-white mt-2">
         <div className="container mx-auto px-6 py-12 grid md:grid-cols-4 gap-10">
           {/* Logo & About */}
           <div>
@@ -45,16 +45,16 @@ function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
             <div className="flex space-x-4">
-              <a href="#" aria-label="Facebook" className="hover:text-gray-400">
+              <a href="facebook.com" aria-label="Facebook" className="hover:text-gray-400">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" aria-label="LinkedIn" className="hover:text-gray-400">
+              <a href="linkedin.com" aria-label="LinkedIn" className="hover:text-gray-400">
                 <i className="fab fa-linkedin-in"></i>
               </a>
-              <a href="#" aria-label="Instagram" className="hover:text-gray-400">
+              <a href="#" aria-label="instagram.com" className="hover:text-gray-400">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="#" aria-label="Twitter" className="hover:text-gray-400">
+              <a href="twitter.com" aria-label="Twitter" className="hover:text-gray-400">
                 <i className="fab fa-twitter"></i>
               </a>
             </div>
