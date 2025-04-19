@@ -1,3 +1,5 @@
+import Footer from "../Footer/Footer";
+
 function Services() {
     return (
       <div className="bg-gray-50">
@@ -105,6 +107,7 @@ function Services() {
             Schedule a Consultation
           </a>
         </section>
+        <Footer/>
       </div>
     );
   }

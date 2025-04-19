@@ -10,7 +10,32 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const slides = [image1, image2, image3];
+const slides = [
+  {
+    type: "iframe",
+    content: (
+      <iframe
+        src="https://www.google.com/maps/d/embed?mid=1YpkdTbV4M8Mm7IRSuYRzLoI73k7g1ns&ehbc=2E312F&noprof=1"
+        width="100%"
+        height="100%"
+        className="w-full h-96 border-none"
+        allowFullScreen
+      ></iframe>
+    ),
+  },
+  {
+    type: "image",
+    src: image1,
+  },
+  {
+    type: "image",
+    src: image2,
+  },
+  {
+    type: "image",
+    src: image3,
+  },
+];
 
 const Slider = () => {
   return (
@@ -25,13 +50,17 @@ const Slider = () => {
         loop={true}
         className="rounded-2xl overflow-hidden"
       >
-        {slides.map((url, index) => (
+        {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <img
-              src={url}
-              alt={`Slide ${index + 1}`}
-              className="w-full h-96 object-cover"
-            />
+            {slide.type === "image" ? (
+              <img
+                src={slide.src}
+                alt={`Slide ${index + 1}`}
+                className="w-full h-96 object-cover"
+              />
+            ) : (
+              slide.content
+            )}
           </SwiperSlide>
         ))}
       </Swiper>

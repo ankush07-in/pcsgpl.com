@@ -1,3 +1,5 @@
+import Footer from "../Footer/Footer";
+
 function Partners() {
     return (
       <div className="bg-white">
@@ -26,7 +28,7 @@ function Partners() {
               </ul>
             </div>
             <img
-              src="assets/images/partners/handshake.jpg"
+              src="https://pcsglobal.in/assets/images/about/1.jpg"
               alt="Partner with us"
               className="rounded-lg shadow-sm"
             />
@@ -37,11 +39,11 @@ function Partners() {
         <section className="py-20 px-4 md:px-20 bg-white text-center">
           <h2 className="text-2xl font-bold text-blue-800 mb-10">Trusted By</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center justify-items-center">
-            <img src="assets/images/partners/company1.png" alt="Partner 1" className="h-12 grayscale hover:grayscale-0 transition" />
-            <img src="assets/images/partners/company2.png" alt="Partner 2" className="h-12 grayscale hover:grayscale-0 transition" />
-            <img src="assets/images/partners/company3.png" alt="Partner 3" className="h-12 grayscale hover:grayscale-0 transition" />
-            <img src="assets/images/partners/company4.png" alt="Partner 4" className="h-12 grayscale hover:grayscale-0 transition" />
-            <img src="assets/images/partners/company5.png" alt="Partner 5" className="h-12 grayscale hover:grayscale-0 transition" />
+            <img src="https://pcsglobal.in/assets/images/clients/1.jpg" alt="Partner 1" className="h-12 grayscale hover:grayscale-0 transition" />
+            <img src="https://pcsglobal.in/assets/images/partners/corporate-parners/drdmtech.png" alt="Partner 2" className="h-12 grayscale hover:grayscale-0 transition" />
+            <img src="https://pcsglobal.in/assets/images/partners/corporate-parners/integrityweb.jfif" alt="Partner 3" className="h-12 grayscale hover:grayscale-0 transition" />
+            <img src="https://pcsglobal.in/assets/images/partners/corporate-parners/dawn-digital.jfif" alt="Partner 4" className="h-12 grayscale hover:grayscale-0 transition" />
+            <img src="https://pcsglobal.in/assets/images/partners/corporate-parners/IoTivity.png" alt="Partner 5" className="h-12 grayscale hover:grayscale-0 transition" />
           </div>
         </section>
   
@@ -83,6 +85,7 @@ function Partners() {
             Become a Partner
           </a>
         </section>
+        <Footer/>
       </div>
     );
   }

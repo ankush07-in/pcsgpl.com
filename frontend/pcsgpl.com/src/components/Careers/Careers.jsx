@@ -1,3 +1,5 @@
+import Footer from "../Footer/Footer";
+
 function Careers() {
     return (
       <div className="bg-gray-50">
@@ -86,6 +88,7 @@ function Careers() {
             </div>
           </div>
         </section>
+        <Footer/>
       </div>
     );
   }

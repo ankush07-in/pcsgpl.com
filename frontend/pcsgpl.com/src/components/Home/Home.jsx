@@ -1,4 +1,5 @@
 import Slider from "../Slider/Slider";
+import Footer from "../Footer/Footer";
 
 function Home() {
   return (
@@ -53,9 +54,10 @@ function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-blue-600 text-white text-center py-6 mt-10">
+      {/* <footer className="bg-blue-600 text-white text-center py-6 mt-10">
         <p>&copy; {new Date().getFullYear()} PCS Global. All rights reserved.</p>
-      </footer>
+      </footer> */}
+      <Footer/>
     </>
   );
 }

@@ -2,7 +2,7 @@ import logo from "../../assets/images/logo-pcs-global.jpg";
 
 function Footer() {
     return (
-      <footer className="bg-blue-900 text-white mt-2">
+      <footer className="bg-blue-800 text-white mt-2">
         <div className="container mx-auto px-6 py-12 grid md:grid-cols-4 gap-10">
           {/* Logo & About */}
           <div>

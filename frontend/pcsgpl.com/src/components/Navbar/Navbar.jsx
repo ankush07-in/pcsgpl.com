@@ -13,7 +13,7 @@ const navItems = [
 
 function Navbar() {
   return (
-    <nav className="bg-blue-500 text-white px-6 sm:px-20 shadow-md h-16">
+    <nav className="bg-blue-600 text-white px-6 sm:px-20 shadow-md h-16">
       <div className="container mx-auto flex justify-between items-center h-full">
         <div className="p-2">
           <img src={logo} alt="Logo" className="h-10 w-auto rounded-md" />

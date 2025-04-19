@@ -1,3 +1,5 @@
+import Footer from "../Footer/Footer";
+
 function Company() {
     return (
       <div className="bg-white">
@@ -32,16 +34,21 @@ function Company() {
         <section className="py-16 px-4 md:px-20">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-blue-800 mb-10">Leadership</h2>
-            <div className="grid gap-8 md:grid-cols-2">
+            <div className="grid gap-8 md:grid-cols-3">
               <div>
-                <img src="assets/images/team/founder.jpg" alt="Founder" className="w-32 h-32 rounded-full mx-auto mb-4" />
+                <img src="https://pcsglobal.in/assets/images/about/7.jpg" alt="Founder" className="w-32 h-32 rounded mx-auto mb-4" />
                 <h3 className="text-xl font-semibold">Mr. Alok Halder</h3>
                 <p className="text-gray-600 text-sm">Founder & Visionary Leader</p>
               </div>
               <div>
-                <img src="assets/images/team/ceo.jpg" alt="CEO" className="w-32 h-32 rounded-full mx-auto mb-4" />
+                <img src="https://pcsglobal.in/assets/images/about/ceo.jpg" alt="CEO" className="w-32 h-32 rounded mx-auto mb-4" />
                 <h3 className="text-xl font-semibold">Mr. Sunit Chaudhuri</h3>
                 <p className="text-gray-600 text-sm">Chief Executive Officer</p>
+              </div>
+              <div>
+                <img src="https://pcsglobal.in/assets/images/about/Debamitra_Banerjee-removebg-preview.png" alt="CEO" className="w-32 h-32 rounded mx-auto mb-4" />
+                <h3 className="text-xl font-semibold">Debamitra Banerjee</h3>
+                <p className="text-gray-600 text-sm">C.I.O</p>
               </div>
             </div>
           </div>
@@ -64,6 +71,7 @@ function Company() {
             </div>
           </div>
         </section>
+        <Footer/>
       </div>
     );
   }
